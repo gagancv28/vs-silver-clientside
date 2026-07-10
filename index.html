@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V.S German Silver Gift House | Premium Silver Return Gifts & Pooja Items</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Discover premium German silver return gifts, pooja items, plates, trays, and divine idols at V.S German Silver Gift House. Perfect for weddings, housewarmings, Varamahalakshmi, and Akshaya Tritiya. Visit us in Arekere, Bengaluru.">
+    <meta name="keywords" content="German silver, silver gift house, return gifts Bengaluru, pooja items, Varamahalakshmi gifts, wedding return gifts, peacock tray, Vanitha V, Arekere silver shop">
+    <meta name="author" content="V.S German Silver Gift House">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Supabase CDN Client SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <!-- Sticky Header / Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <!-- Logo and Shop Name -->
+            <a href="#home" class="logo-area">
+                <img src="WhatsApp Image 2026-07-07 at 10.15.37 AM.jpg" alt="V.S German Silver Gift House Logo" class="shop-logo" id="shopLogo">
+                <span class="shop-name">V.S German <span class="accent-text">Silver</span></span>
+            </a>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#special-offer" class="nav-link">Offers</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#about" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Cart Trigger Icon -->
+            <button class="cart-trigger" id="cartTrigger" aria-label="Open Shopping Cart">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span class="cart-badge" id="cartBadge">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" style="background-image: linear-gradient(rgba(10, 11, 16, 0.65), rgba(10, 11, 16, 0.85)), url('image_2bf4db.jpg');">
+        <div class="hero-content fade-in-up">
+            <span class="hero-subtitle">Traditional Craftsmanship & Divine Elegance</span>
+            <h1 class="hero-title">Timeless German Silver Gifting</h1>
+            <p class="hero-description">Discover a luxurious collection of authentic German silverware, return gifts, pooja articles, and gifting items designed to make your celebrations unforgettable.</p>
+            <div class="hero-cta-group">
+                <a href="#products" class="btn btn-primary btn-glow">
+                    <span>Shop Collection</span> <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#special-offer" class="btn btn-secondary">
+                    <span>Special Offer</span>
+                </a>
+            </div>
+        </div>
+        <!-- Scroll Down indicator -->
+        <a href="#special-offer" class="scroll-down-indicator" aria-label="Scroll Down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section id="special-offer" class="special-offer-section scroll-reveal">
+        <div class="section-container">
+            <div class="special-offer-glow-bg"></div>
+            <div class="offer-card" id="specialOfferCard">
+                <div class="offer-badge-wrapper">
+                    <span class="offer-badge-sparkle"></span>
+                    <div class="offer-badge">Dhamaka Offer</div>
+                </div>
+                
+                <h2 class="offer-title">Varamahalakshmi Special Celebration!</h2>
+                
+                <!-- Verbatim Offer text paragraph -->
+                <p class="offer-message-verbatim">
+                    "Dhamaka Offer at V.S. German Silver Gift House this Varamahalakshmi! Purchase anything over ₹3000 and get a premium Vastu kamadhenu set absolutely FREE! 🕉️✨ This exquisite German silver Vastu kamadhenu symbolizes wealth, prosperity, and family harmony – perfect for puja and auspicious gifting on Akshaya Tritiya. Handcrafted for positive energy and lasting shine, it's a must-have for your home or events. Ideal for school functions, weddings gifts, or festivals – hurry, limited stocks! Visit V.S. German Silver Gift House, Arekere, Bengaluru. WhatsApp/Call: 8861320313"
+                </p>
+
+                <div class="offer-details-grid">
+                    <div class="offer-detail-item">
+                        <i class="fa-solid fa-gift detail-icon"></i>
+                        <div>
+                            <h4>Free Gift Value</h4>
+                            <p>Premium Vastu Kamadhenu Set</p>
+                        </div>
+                    </div>
+                    <div class="offer-detail-item">
+                        <i class="fa-solid fa-cart-shopping detail-icon"></i>
+                        <div>
+                            <h4>Qualifying Purchase</h4>
+                            <p>Spend ₹3,000 or above</p>
+                        </div>
+                    </div>
+                    <div class="offer-detail-item">
+                        <i class="fa-solid fa-map-location-dot detail-icon"></i>
+                        <div>
+                            <h4>Store Location</h4>
+                            <p>Arekere, Bengaluru</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="offer-cta-group">
+                    <a href="https://wa.me/918861320313?text=Hi%20V.S%20German%20Silver%20Gift%20House,%20I%20am%20interested%20in%20your%20Varamahalakshmi%20Dhamaka%20Offer!" target="_blank" class="btn btn-whatsapp btn-glow">
+                        <i class="fa-brands fa-whatsapp"></i> Claim Offer on WhatsApp
+                    </a>
+                    <a href="tel:8861320313" class="btn btn-outline-gold">
+                        <i class="fa-solid fa-phone"></i> Call 8861320313
+                    </a>
+                </div>
+
+                <a href="#contact" class="store-address-callout">
+                    <i class="fa-solid fa-location-dot animated-bounce"></i>
+                    <span><strong>Visit Us:</strong> V.S. German Silver Gift House, Arekere, Bengaluru</span>
+                </a>
+                <div class="sparkle-hint">💡 Click anywhere on this card to scatter gold dust sparkles!</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Unique Item -->
+    <section id="featured" class="featured-section scroll-reveal">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Exquisite & Unique</span>
+                <h2 class="main-heading">Signature Product</h2>
+                <div class="accent-divider"></div>
+            </div>
+            
+            <div class="featured-grid">
+                <!-- Product Image -->
+                <div class="featured-image-container">
+                    <div class="image-border-glow">
+                        <img src="image_2bf45a.jpg" alt="Elegant Multi Purpose Peacock Tray" class="featured-img" style="width: 100%; border-radius: 4px; display: block; object-fit: cover; aspect-ratio: 4/3;">
+                    </div>
+                    <div class="featured-tag">Best Seller</div>
+                </div>
+                
+                <!-- Product Details -->
+                <div class="featured-details">
+                    <h3 class="product-title">Elegant Multi Purpose Peacock Tray</h3>
+                    <div class="product-price">
+                        <span class="currency">₹</span><span class="amount">1,499</span>
+                        <span class="price-badge">Inclusive of Taxes</span>
+                    </div>
+                    
+                    <p class="product-desc">
+                        Add a touch of grace and beauty to your home with this stylish peacock tray. Perfect for serving, decorating, or gifting, it brings both elegance and utility together in one lovely piece. Ideal for holding dry fruits, sweets or as a decorative accent for your table or pooja space.
+                    </p>
+
+                    <ul class="product-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Pure German Silver polish with lasting shine</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Ornate peacock engraving with handles</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Sturdy craft base, perfect for dry fruit / sweet serving</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Excellent wedding, housewarming, or puja return gift</li>
+                    </ul>
+
+                    <div class="featured-btn-group">
+                        <button class="btn btn-primary add-to-cart-btn" data-id="peacock-tray" data-name="Elegant Multi Purpose Peacock Tray" data-price="1499" data-img="image_2bf45a.jpg">
+                            <i class="fa-solid fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <a href="https://wa.me/918861320313?text=Hi%20V.S%20German%20Silver%20Gift%20House,%20I%20would%20like%20to%20order%20the%20Elegant%20Multi%20Purpose%20Peacock%20Tray!" target="_blank" class="btn btn-whatsapp-outline">
+                            <i class="fa-brands fa-whatsapp"></i> Buy via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Gallery -->
+    <section id="products" class="gallery-section scroll-reveal">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Shop Our Catalog</span>
+                <h2 class="main-heading">Featured Products</h2>
+                <div class="accent-divider"></div>
+            </div>
+
+            <!-- Categories Tabs -->
+            <div class="gallery-tabs">
+                <button class="tab-btn active" data-filter="all">All Items</button>
+                <button class="tab-btn" data-filter="pooja">Pooja Essentials</button>
+                <button class="tab-btn" data-filter="plates">Plates & Trays</button>
+                <button class="tab-btn" data-filter="decor">Home Decor & Gifting</button>
+            </div>
+
+            <!-- Real-Time Search & Sort Bar -->
+            <div class="gallery-controls">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="productSearch" placeholder="Search silverware (e.g. plate, kalash, bowl)...">
+                    <button class="clear-search-btn" id="clearSearch" aria-label="Clear Search"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="sort-box">
+                    <label for="productSort"><i class="fa-solid fa-arrow-down-wide-short"></i> Sort By:</label>
+                    <select id="productSort" class="sort-select">
+                        <option value="featured">Featured / Best Seller</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rating</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid" id="productGrid">
+                <!-- Loaded dynamically from script.js to support easy Supabase integration -->
+            </div>
+            
+            <!-- No Products Found Message -->
+            <div class="no-products-found" id="noProductsFound" style="display: none;">
+                <i class="fa-solid fa-face-sad-tear"></i>
+                <h3>No silverware matches your search.</h3>
+                <p>Try searching for "plate", "bowl", "diya", "kalash", or clear the filters.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section scroll-reveal">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Happy Customers</span>
+                <h2 class="main-heading">Customer Testimonials</h2>
+                <div class="accent-divider"></div>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "I ordered 120 pieces of the Elegant Peacock Trays as return gifts for my daughter's wedding. Vanitha V. managed everything exceptionally well. The trays were beautifully wrapped and delivered right on time in Bengaluru. Every guest loved the quality and shine!"
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-gold">S</div>
+                            <div>
+                                <h4 class="client-name">Saraswathi Ramesh</h4>
+                                <p class="client-location">JP Nagar, Bengaluru</p>
+                                <div class="client-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "The Varamahalakshmi Dhamaka offer is amazing! I bought items for our home pooja exceeding ₹3,000 and received the Vastu Kamadhenu set for free. The quality of German silver is superb, it looks exactly like pure silver. Highly recommend this shop!"
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-silver">M</div>
+                            <div>
+                                <h4 class="client-name">Meenakshi Sundar</h4>
+                                <p class="client-location">Arekere, Bengaluru</p>
+                                <div class="client-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial-text">
+                            "Perfect spot for traditional return gifts. Excellent prices, direct from dealer rates, and great customer care by Owner Vanitha. I bought silver bowl sets for a housewarming function and they custom packed everything. Very satisfied!"
+                        </p>
+                        <div class="client-info">
+                            <div class="client-avatar bg-gold">R</div>
+                            <div>
+                                <h4 class="client-name">Rajesh Kumar</h4>
+                                <p class="client-location">Bannerghatta Road, Bengaluru</p>
+                                <div class="client-stars">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial Nav dots -->
+                <div class="slider-dots" id="sliderDots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Owner Section -->
+    <section id="about" class="about-section scroll-reveal">
+        <div class="section-container">
+            <div class="about-grid">
+                <!-- Owner Image Column -->
+                <div class="owner-image-col">
+                    <div class="owner-frame-gold">
+                        <img src="WhatsApp Image 2026-07-07 at 10.15.36 AM.jpeg" alt="Vanitha V. - Owner of V.S German Silver Gift House" class="owner-photo">
+                        <div class="owner-tag">
+                            <h4 class="owner-tag-name">Vanitha.V</h4>
+                            <p class="owner-tag-title">Founder & Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Owner Info Column -->
+                <div class="owner-info-col">
+                    <span class="sub-heading">Behind V.S German Silver</span>
+                    <h2 class="about-title">A Vision of Elegance and Tradition</h2>
+                    <div class="accent-divider-left"></div>
+                    
+                    <p class="about-text">
+                        Welcome to <strong>V.S German Silver Gift House</strong>. Founded and lovingly curated by <strong>Vanitha.V</strong>, our shop stands as a beacon of traditional Indian craftsmanship, divine elegance, and high-quality silverware in Bengaluru. 
+                    </p>
+                    <p class="about-text">
+                        We specialize in providing high-grade German silver items that offer the timeless charm and luster of pure silver at accessible prices. Every tray, diya, plate, and bowl in our catalog is handpicked to ensure flawless design, durability, and positive energy for your homes.
+                    </p>
+                    <p class="about-text">
+                        Whether you are shopping for your personal pooja room, looking for bulk return gifts for a wedding, naming ceremony, housewarming, or hosting a school/corporate event, we guarantee complete satisfaction, prompt delivery, and the finest customer service. Let us help you select gifts that leave a lasting impression of gold-standard hospitality.
+                    </p>
+                    
+                    <!-- Core Values / Highlights -->
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-number">01</span>
+                            <div>
+                                <h5>Premium Quality</h5>
+                                <p>Superb durability and hand-polished lasting shine.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-number">02</span>
+                            <div>
+                                <h5>Affordable Luxury</h5>
+                                <p>Traditional aesthetic of pure silver without the hefty price.</p>
+                            </div>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-number">03</span>
+                            <div>
+                                <h5>Bulk Orders Specialists</h5>
+                                <p>Customized wrapping for weddings, school programs & pujas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section scroll-reveal">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Common Queries</span>
+                <h2 class="main-heading">Frequently Asked Questions</h2>
+                <div class="accent-divider"></div>
+            </div>
+            
+            <div class="faq-accordion-container">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What exactly is German Silver? Will it rust?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>German silver is a premium copper alloy with nickel and zinc, finished with a heavy, professional polish of pure silver. It does not rust, but like pure silver, it can tarnish over time when exposed to moisture and air. With simple cleaning, it maintains its beautiful metallic shine for years.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you accept bulk orders for weddings, naming ceremonies, or events?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely! We specialize in bulk return gifts for school functions, weddings, housewarmings, naming ceremonies, and festivals. We offer special discounted wholesale rates for large orders. Please contact Owner Vanitha V. directly on WhatsApp (8861320313) to discuss customization and pricing.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do we clean and maintain German Silver items?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>To keep your silverware glowing: wash gently using mild soap and a soft sponge. Avoid hard scrubbers or abrasives. Dry immediately and completely with a soft cotton cloth. Store them in airtight zip bags or boxes wrapped in soft paper when not in use to prevent tarnishing.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer delivery across Bengaluru and India?</span>
+                        <i class="fa-solid fa-chevron-down faq-arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer home delivery across Bengaluru. For locations outside Bengaluru, we can ship orders via reliable courier services. Shipping charges apply based on order weight and destination. Contact us to get a shipping quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Feedback Section -->
+    <section id="feedback" class="feedback-section scroll-reveal">
+        <div class="section-container">
+            <div class="section-header text-center">
+                <span class="sub-heading">Your thoughts matter</span>
+                <h2 class="main-heading">Customer Feedback</h2>
+                <div class="accent-divider"></div>
+            </div>
+
+            <div class="feedback-container">
+                <form id="feedbackForm" class="feedback-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="feedbackName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="feedbackName" required placeholder="Enter your name" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="feedbackPhone">Phone Number</label>
+                            <input type="tel" id="feedbackPhone" placeholder="Enter your contact number" class="form-input">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Your Rating <span class="required">*</span></label>
+                        <div class="star-rating-selector" id="starRatingSelector">
+                            <button type="button" class="star-btn" data-value="1" aria-label="1 Star"><i class="fa-regular fa-star"></i></button>
+                            <button type="button" class="star-btn" data-value="2" aria-label="2 Stars"><i class="fa-regular fa-star"></i></button>
+                            <button type="button" class="star-btn" data-value="3" aria-label="3 Stars"><i class="fa-regular fa-star"></i></button>
+                            <button type="button" class="star-btn" data-value="4" aria-label="4 Stars"><i class="fa-regular fa-star"></i></button>
+                            <button type="button" class="star-btn" data-value="5" aria-label="5 Stars"><i class="fa-regular fa-star"></i></button>
+                        </div>
+                        <input type="hidden" id="feedbackRating" name="rating" value="0" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="feedbackMessage">Message / Review <span class="required">*</span></label>
+                        <textarea id="feedbackMessage" required placeholder="Share your experience with our products or service..." rows="4" class="form-textarea"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-glow">Submit Feedback</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer id="contact" class="main-footer">
+        <div class="footer-top">
+            <div class="section-container footer-grid">
+                
+                <!-- Shop Profile Column -->
+                <div class="footer-col profile-col">
+                    <a href="#home" class="footer-logo">
+                        <img src="WhatsApp Image 2026-07-07 at 10.15.37 AM.jpg" alt="V.S German Silver Logo" class="footer-logo-img">
+                        <span class="footer-shop-name">V.S German Silver</span>
+                    </a>
+                    <p class="footer-desc">
+                        Your trusted destination for exquisite German Silver Return Gifts, Pooja accessories, and decorative trays in Arekere, Bengaluru. Bringing prosperity and shine to your celebrations.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/918861320313" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="tel:8861320313" aria-label="Phone Call"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col links-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#special-offer"><i class="fas fa-chevron-right"></i> Offers</a></li>
+                        <li><a href="#products"><i class="fas fa-chevron-right"></i> Our Products</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="footer-col info-col">
+                    <h4 class="footer-title">Get In Touch</h4>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-phone-volume contact-icon"></i>
+                            <div>
+                                <p class="contact-label">Main Contact</p>
+                                <a href="tel:8861320313" class="contact-value">8861320313</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone contact-icon"></i>
+                            <div>
+                                <p class="contact-label">Alternate Contact</p>
+                                <a href="tel:8105556894" class="contact-value">8105556894</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope contact-icon"></i>
+                            <div>
+                                <p class="contact-label">Email Support</p>
+                                <a href="mailto:vanitha.vsgs@gmail.com" class="contact-value">vanitha.vsgs@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot contact-icon"></i>
+                            <div>
+                                <p class="contact-label">Address</p>
+                                <p class="contact-value">Arekere, Bengaluru, Karnataka, India</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Google Maps Embed Column -->
+                <div class="footer-col map-col">
+                    <h4 class="footer-title">Find Our Store</h4>
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=12.88740348815918%2C77.60262298583984&z=17&hl=en&output=embed" 
+                            width="100%" 
+                            height="180" 
+                            style="border:0; border-radius: 8px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="V.S German Silver Gift House Location Map">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+            <div class="section-container bottom-container">
+                <p class="copyright-text">&copy; 2026 V.S German Silver Gift House. All Rights Reserved.</p>
+                <p class="owner-credit">Store Managed by <strong>Vanitha.V</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal-overlay" id="checkoutModalOverlay">
+        <div class="modal-card">
+            <button class="close-modal-btn" id="closeCheckoutModal" aria-label="Close Checkout">&times;</button>
+            <div class="modal-header">
+                <i class="fa-solid fa-credit-card modal-icon"></i>
+                <h3>Checkout Details</h3>
+                <p>Complete your contact information to submit your silverware order.</p>
+            </div>
+            <form id="checkoutForm" class="checkout-form">
+                <div class="form-group">
+                    <label for="checkoutName">Full Name <span class="required">*</span></label>
+                    <input type="text" id="checkoutName" required placeholder="Enter your full name" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="checkoutEmail">Email Address <span class="required">*</span></label>
+                    <input type="email" id="checkoutEmail" required placeholder="Enter your email address" class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="customer_phone">Phone Number <span class="required">*</span></label>
+                    <input type="tel" id="customer_phone" required placeholder="Enter 10-digit mobile number" class="form-input" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+                </div>
+                
+                <div class="promo-code-section">
+                    <label for="promoCode">Discount Code</label>
+                    <div class="promo-input-group">
+                        <input type="text" id="promoCode" placeholder="Enter coupon code" class="form-input">
+                        <button type="button" class="btn btn-secondary" id="applyPromoBtn">Apply</button>
+                    </div>
+                    <span id="promoFeedback" class="promo-feedback"></span>
+                </div>
+
+                <div class="checkout-summary">
+                    <div class="summary-row">
+                        <span>Items Subtotal</span>
+                        <span id="summarySubtotal">₹0</span>
+                    </div>
+                    <div class="summary-row discount-row" id="summaryDiscountRow" style="display: none;">
+                        <span>Discount Applied</span>
+                        <span id="summaryDiscount">₹0</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span>Grand Total</span>
+                        <span id="summaryTotal">₹0</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-glow btn-block" id="placeOrderBtn">
+                    Place Silverware Order
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="confirm-modal-overlay" id="confirmModalOverlay">
+        <div class="modal-card confirm-card text-center">
+            <div class="confirm-success-icon">
+                <i class="fa-solid fa-circle-check animated-bounce"></i>
+            </div>
+            <h3>Order Placed Successfully!</h3>
+            <p>Your order has been recorded in our system. Founder <strong>Vanitha.V</strong> will review and contact you shortly regarding delivery.</p>
+            <div class="order-details-summary">
+                <p>Order ID: <span id="confirmOrderId" class="gold-text"></span></p>
+                <p>Total Amount: <span id="confirmOrderAmount" class="gold-text"></span></p>
+            </div>
+            <button class="btn btn-primary" id="closeConfirmModal">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Shopping Cart Sidebar Drawer Overlay -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+
+    <!-- Shopping Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer" role="dialog" aria-labelledby="cartDrawerTitle" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <h3 id="cartDrawerTitle"><i class="fa-solid fa-bag-shopping"></i> Shopping Cart</h3>
+            <button class="close-cart-btn" id="closeCart" aria-label="Close Cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <!-- Cart Items Container -->
+        <div class="cart-drawer-body" id="cartItemsContainer">
+            <!-- Empty Cart Message (default) -->
+            <div class="empty-cart-state" id="emptyCartState">
+                <i class="fa-solid fa-basket-shopping empty-icon"></i>
+                <p>Your shopping basket is empty.</p>
+                <a href="#products" class="btn btn-primary close-cart-link">Browse Products</a>
+            </div>
+            
+            <!-- Cart Items List (rendered dynamically) -->
+            <ul class="cart-items-list" id="cartItemsList"></ul>
+        </div>
+        
+        <!-- Cart Footer -->
+        <div class="cart-drawer-footer" id="cartDrawerFooter">
+            <!-- Special Offer Eligibility Callout inside Cart -->
+            <div class="cart-promo-callout" id="cartPromoCallout">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span id="promoText">Add ₹3,000 to get a FREE Vastu Kamadhenu Set!</span>
+            </div>
+
+            <div class="cart-subtotal-row">
+                <span class="subtotal-label">Subtotal</span>
+                <span class="subtotal-value" id="cartSubtotal">₹0</span>
+            </div>
+            
+            <!-- Supabase Order Submission -->
+            <div class="cart-checkout-section">
+                <button class="btn btn-primary btn-glow btn-block" id="checkoutBtn">
+                    <i class="fa-solid fa-credit-card"></i> Proceed to Checkout
+                </button>
+                <p class="checkout-hint">Payments and shipping details will be completed in the next steps.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Chat Widget -->
+    <div class="whatsapp-chat-widget" id="whatsappChatWidget">
+        <div class="chat-bubble" id="chatBubble">
+            <div class="chat-bubble-header">
+                <img src="logo.jpg" alt="V.S German Silver Logo" class="chat-logo">
+                <div>
+                    <h5>Vanitha.V</h5>
+                    <p><span class="status-dot"></span> Online</p>
+                </div>
+                <button class="close-chat-widget" id="closeChatWidget" aria-label="Close Chat Widget"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-bubble-body">
+                <p class="chat-msg-received">Namaste! Welcome to V.S German Silver Gift House. How can I help you select the perfect return gifts or pooja items today? 🙏🕉?</p>
+            </div>
+            <div class="chat-bubble-footer">
+                <a href="https://wa.me/918861320313?text=Hi%20Vanitha,%20I'm%20visiting%20your%20website%20and%20had%20a%20query!" target="_blank" class="btn btn-whatsapp btn-block">
+                    <i class="fa-brands fa-whatsapp"></i> Start Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+        <button class="whatsapp-float-btn" id="whatsappFloatBtn" aria-label="Chat with Owner on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span class="pulse-ring"></span>
+        </button>
+    </div>
+
+    <!-- Notification Toast (For item added alert) -->
+    <div class="notification-toast" id="notificationToast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span class="toast-message" id="toastMessage">Item added to cart!</span>
+    </div>
+
+    <!-- Floating Incense Stick (Agarbatti) with Realistic Smoke -->
+    <div class="incense-container" id="incenseContainer">
+        <canvas id="smokeCanvas"></canvas>
+        <div class="incense-holder"></div>
+        <div class="incense-stick">
+            <span class="burning-ember"></span>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
