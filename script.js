@@ -865,13 +865,13 @@ document.addEventListener('DOMContentLoaded', () => {
             draw() {
                 ctx.save();
                 const grad = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, this.size);
-                // Center core: Warm charcoal-slate (highly visible on light backgrounds)
-                grad.addColorStop(0, `rgba(80, 84, 94, ${this.alpha})`);
-                // Middle body: Medium slate-grey
-                grad.addColorStop(0.25, `rgba(135, 140, 150, ${this.alpha * 0.75})`);
-                // Outer halo: Light grey-white (visible on dark backgrounds)
-                grad.addColorStop(0.6, `rgba(220, 222, 228, ${this.alpha * 0.35})`);
-                grad.addColorStop(1, 'rgba(220, 222, 228, 0)');
+                // Center core: Soft translucent gold (matches the luxury brand accent)
+                grad.addColorStop(0, `rgba(212, 175, 55, ${this.alpha * 0.22})`);
+                // Middle body: Warm champagne-beige
+                grad.addColorStop(0.3, `rgba(235, 220, 195, ${this.alpha * 0.14})`);
+                // Outer halo: Very soft white
+                grad.addColorStop(0.6, `rgba(255, 250, 240, ${this.alpha * 0.07})`);
+                grad.addColorStop(1, 'rgba(255, 250, 240, 0)');
                 
                 ctx.fillStyle = grad;
                 ctx.beginPath();

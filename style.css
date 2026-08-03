@@ -424,9 +424,11 @@ img {
    4. Hero Section
    ========================================================================== */
 .hero-section {
+    width: 100%;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -2344,7 +2346,10 @@ a.contact-value:hover {
     
     /* Hero */
     .hero-section {
+        width: 100%;
         min-height: 80vh;
+        background-size: cover;
+        background-repeat: no-repeat;
         align-items: center;
         text-align: center;
     }
@@ -2489,6 +2494,7 @@ a.contact-value:hover {
     width: 200px;
     height: calc(100vh - 96px);
     pointer-events: none;
+    mix-blend-mode: screen; /* Ensures particles blend like soft glowing light */
 }
 
 .incense-holder {
