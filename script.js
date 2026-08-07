@@ -152,6 +152,34 @@ document.addEventListener('DOMContentLoaded', () => {
         renderProductsGrid();
     }
 
+    // ==========================================
+    // 3.5 Dynamic Store Settings Fetcher (Offers)
+    // ==========================================
+    async function fetchStoreSettings() {
+        const offerTitleEl = document.getElementById('offerSectionTitle');
+        const offerDescEl = document.getElementById('offerSectionDesc');
+        
+        try {
+            const { data, error } = await supabase
+                .from('store_settings')
+                .select('offer_title, offer_description')
+                .limit(1);
+            
+            if (error) throw error;
+            
+            if (data && data.length > 0 && data[0].offer_title && data[0].offer_description) {
+                if (offerTitleEl) offerTitleEl.textContent = data[0].offer_title;
+                if (offerDescEl) offerDescEl.textContent = data[0].offer_description;
+                console.log("Successfully fetched dynamic offer text from Supabase:", data[0]);
+            } else {
+                console.warn("Store settings is empty. Keeping default Varamahalakshmi offer.");
+            }
+        } catch (err) {
+            console.error("Error fetching store settings from Supabase:", err);
+            // Keeps the default hardcoded HTML Varamahalakshmi celebration message as fallback
+        }
+    }
+
     function renderProductsGrid() {
         if (!productGrid) return;
         productGrid.innerHTML = '';
@@ -1051,6 +1079,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load dynamic updates asynchronously from Supabase
     fetchProducts();
+    fetchStoreSettings();
     loadCart();
 
 });
