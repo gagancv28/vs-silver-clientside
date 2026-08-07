@@ -177,6 +177,37 @@ document.addEventListener('DOMContentLoaded', () => {
             const buttonState = p.stock_status ? '' : 'disabled';
             const buttonText = p.stock_status ? '<i class="fa-solid fa-cart-plus"></i> Add to Cart' : 'Out of Stock';
 
+            // Check if price is 0 (Price on Request)
+            const isPriceOnRequest = (activePrice === 0 || activePrice === "0" || activePrice === 0.0);
+            
+            // Build price html
+            let priceHtml = '';
+            if (isPriceOnRequest) {
+                priceHtml = `<span class="card-price">Price on Request</span>`;
+            } else {
+                priceHtml = `<span class="card-price">₹${activePrice.toLocaleString('en-IN')}</span>`;
+                if (p.sale_price !== null) {
+                    priceHtml += `<span class="card-old-price">₹${p.regular_price.toLocaleString('en-IN')}</span>`;
+                }
+            }
+
+            // Build CTA button html
+            let buttonHtml = '';
+            if (isPriceOnRequest) {
+                const waUrl = `https://wa.me/918105556894?text=${encodeURIComponent(`Hi, I would like to know the price of ${p.title}`)}`;
+                buttonHtml = `
+                    <a href="${waUrl}" target="_blank" class="btn btn-whatsapp btn-block" style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; background: #25d366; border-color: #25d366; color: #ffffff;">
+                        <i class="fa-brands fa-whatsapp"></i> Inquire on WhatsApp
+                    </a>
+                `;
+            } else {
+                buttonHtml = `
+                    <button class="btn btn-primary add-to-cart-btn" data-id="${p.id}" data-title="${p.title}" data-price="${activePrice}" data-img="${p.image_url}" ${buttonState}>
+                        ${buttonText}
+                    </button>
+                `;
+            }
+
             card.innerHTML = `
                 <div class="card-img-wrapper">
                     ${stockBadgeHtml}
@@ -191,12 +222,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>(${ratingText})</span>
                     </div>
                     <div class="card-price-row">
-                        <span class="card-price">₹${activePrice.toLocaleString('en-IN')}</span>
-                        ${p.sale_price !== null ? `<span class="card-old-price">₹${p.regular_price.toLocaleString('en-IN')}</span>` : ''}
+                        ${priceHtml}
                     </div>
-                    <button class="btn btn-primary add-to-cart-btn" data-id="${p.id}" data-title="${p.title}" data-price="${activePrice}" data-img="${p.image_url}" ${buttonState}>
-                        ${buttonText}
-                    </button>
+                    ${buttonHtml}
                 </div>
             `;
             productGrid.appendChild(card);
