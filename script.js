@@ -3,8 +3,8 @@
    ========================================================================== */
 
 // 1. Supabase Connection Configuration
-const SUPABASE_URL = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_SUPABASE_URL) ? import.meta.env.VITE_SUPABASE_URL : 'https://lsgcvekatccoczwtihxb.supabase.co';
-const SUPABASE_ANON_KEY = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_SUPABASE_ANON_KEY) ? import.meta.env.VITE_SUPABASE_ANON_KEY : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxzZ2N2ZWthdGNjb2N6d3RpaHhiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM0ODM4MzAsImV4cCI6MjA5OTA1OTgzMH0.rWvx9elnQh48dvIpZOnkMMtfJ39hj6Zes2Lm1JuLvXo';
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 document.addEventListener('DOMContentLoaded', () => {
