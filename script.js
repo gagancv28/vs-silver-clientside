@@ -3,8 +3,8 @@
    ========================================================================== */
 
 // 1. Supabase Connection Configuration
-const SUPABASE_URL = 'https://lsgcvekatccoczwtihxb.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxzZ2N2ZWthdGNjb2N6d3RpaHhiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM0ODM4MzAsImV4cCI6MjA5OTA1OTgzMH0.rWvx9elnQh48dvIpZOnkMMtfJ39hj6Zes2Lm1JuLvXo';
+const SUPABASE_URL = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_SUPABASE_URL) ? import.meta.env.VITE_SUPABASE_URL : 'https://lsgcvekatccoczwtihxb.supabase.co';
+const SUPABASE_ANON_KEY = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_SUPABASE_ANON_KEY) ? import.meta.env.VITE_SUPABASE_ANON_KEY : 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxzZ2N2ZWthdGNjb2N6d3RpaHhiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM0ODM4MzAsImV4cCI6MjA5OTA1OTgzMH0.rWvx9elnQh48dvIpZOnkMMtfJ39hj6Zes2Lm1JuLvXo';
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -156,6 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 3.5 Dynamic Store Settings Fetcher (Offers)
     // ==========================================
     async function fetchStoreSettings() {
+        const offerSection = document.getElementById('special-offer');
         const offerTitleEl = document.getElementById('offerSectionTitle');
         const offerDescEl = document.getElementById('offerSectionDesc');
         
@@ -170,13 +171,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data && data.length > 0 && data[0].offer_title && data[0].offer_description) {
                 if (offerTitleEl) offerTitleEl.textContent = data[0].offer_title;
                 if (offerDescEl) offerDescEl.textContent = data[0].offer_description;
+                if (offerSection) offerSection.style.display = 'block';
                 console.log("Successfully fetched dynamic offer text from Supabase:", data[0]);
             } else {
-                console.warn("Store settings is empty. Keeping default Varamahalakshmi offer.");
+                console.log("Store settings is empty or offer deleted. Hiding special offer section.");
+                if (offerSection) offerSection.style.display = 'none';
             }
         } catch (err) {
             console.error("Error fetching store settings from Supabase:", err);
-            // Keeps the default hardcoded HTML Varamahalakshmi celebration message as fallback
+            if (offerSection) offerSection.style.display = 'none';
         }
     }
 
